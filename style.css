@@ -26,26 +26,20 @@ body {
 }
 
 .main-container {
-  width: 70vw;
-  margin: 0 auto;
+  width: 100vw;
 }
 
 .header {
-    width: 100%;
+    width: 90%;
     display: flex;
-    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
 }
 .logo-hd {
     width: 17vw;
     max-width: 90px;
-    margin-left: 3vw;
-    margin-right: 13vw;
-}
-.navbar {
-    display: flex;
-    position: absolute;
-    right: 15%;
-    margin-top: 5px;
+    margin: 10px auto;
 }
 a {
     text-decoration: none;
@@ -156,7 +150,7 @@ button:hover {
 /* Quote containers */
 .quote-container {
   font-family: "Open Sans", sans-serif;
-  width: 56vw;
+  width: 80vw;
   background-color: var(--testimonials-bg);
   margin: 0px auto 25px auto;
   text-align: left;
@@ -164,7 +158,7 @@ button:hover {
   box-shadow: 2px 2px 6px 6px hsla(180, 2%, 9%, 0.349);
 }
 .quote-text {
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.2rem;
   padding: 25px 20px 0 20px;
 }
@@ -194,7 +188,7 @@ button:hover {
 
 /* Sign up container */
 .early-container {
-  width: 68vw;
+  width: 80vw;
   background-color: var(--sign-up-bg);
   border-radius: 10px;
   margin: -20px auto 0px auto;
@@ -214,7 +208,7 @@ button:hover {
   line-height: 1.4rem;
 }
 input {
-  width: 280px;
+  width: 75vw;
   height: 50px;
   border-radius: 25px;
   border: none;
@@ -222,11 +216,11 @@ input {
 }
 #email::placeholder {
   font-family: "Open Sans", sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   padding-left: 30px;
 }
 .btn-early {
-  width: 280px;
+  width: 75vw;
   height: 55px;
   margin: 25px auto 40px auto;
 }
@@ -302,26 +296,9 @@ input {
 }
 
 @media (min-width: 800px) {
-  .main-container {
-    width: 100vw;
-  }
-
-  .header {
-    width: 100vw;
-    display: flex;
-    margin-top: 40px;
-  }
   .logo-hd {
     width: 186px;
     max-width: none;
-    margin-left: 5vw;
-    margin-right: 0;
-  }
-  .navbar {
-    display: flex;
-    position: absolute;
-    right: 5%;
-    margin-top: 20px;
   }
   a {
     text-decoration: none;
@@ -378,13 +355,15 @@ input {
 
   /* STAY PRODUCTIVE CONTAINER WITH IMAGE */
   .flex-container {
-    display: grid;
-    grid-template-columns: 105px 1fr 1fr 115px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-top: 80px;
   }
   .productive-img {
-    grid-column: 2;
-    width: 42.64vw;
+    width: 40%;
+    height: 40%;
    
   }
   .productive-container {
